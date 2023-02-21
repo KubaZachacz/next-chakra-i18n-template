@@ -1,3 +1,5 @@
+const nextTranslate = require('next-translate-plugin');
+
 const withPWA = require('next-pwa')({
   dest: 'public',
   disable:
@@ -9,10 +11,12 @@ const withPWA = require('next-pwa')({
 });
 
 /** @type {import('next').NextConfig} */
-module.exports = withPWA({
-  swcMinify: true,
-  reactStrictMode: true,
-  eslint: {
-    dirs: ['src'],
-  },
-});
+module.exports = withPWA(
+  nextTranslate({
+    swcMinify: true,
+    reactStrictMode: true,
+    eslint: {
+      dirs: ['src'],
+    },
+  })
+);

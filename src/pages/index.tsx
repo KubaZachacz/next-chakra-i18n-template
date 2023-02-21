@@ -10,8 +10,11 @@ import {
   ListItem,
   Text,
 } from '@chakra-ui/react';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <>
       <main>
@@ -19,11 +22,15 @@ export default function Home() {
           <Center w="full">
             <Box>
               <Heading as="h1" size="2xl" mb={4}>
-                Welcome to Next.js + Chakra UI
+                {t('title', null, {
+                  default: 'Welcome to Next.js + Chakra UI',
+                })}
               </Heading>
               <Text>
-                This is a template for Next.js + Chakra UI. It includes the
-                following features:
+                {t('description', null, {
+                  default:
+                    'This is a template for Next.js + Chakra UI. It includes the following features:',
+                })}
               </Text>
               <List spacing={3} mt={4}>
                 <ListItem display="flex">

@@ -2857,7 +2857,7 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^4.0.0, chalk@^4.0.2, chalk@^4.1.0:
+chalk@^4.0.0, chalk@^4.0.2, chalk@^4.1.0, chalk@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
   integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
@@ -2997,7 +2997,7 @@ commander@^2.20.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
 
-commander@^9.3.0:
+commander@^9.0.0, commander@^9.3.0:
   version "9.5.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-9.5.0.tgz#bc08d1eb5cedf7ccb797a96199d41c7bc3e60d30"
   integrity sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==
@@ -3885,7 +3885,7 @@ glob@7.1.7:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@^7.0.3, glob@^7.1.3, glob@^7.1.6:
+glob@^7.0.3, glob@^7.1.3, glob@^7.1.6, glob@^7.2.0:
   version "7.2.3"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.2.3.tgz#b8df0fb802bbfa8e89bd1d938b4e16578ed44f2b"
   integrity sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==
@@ -4793,6 +4793,28 @@ next-seo@^5.15.0:
   version "5.15.0"
   resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-5.15.0.tgz#b1a90508599774982909ea44803323c6fb7b50f4"
   integrity sha512-LGbcY91yDKGMb7YI+28n3g+RuChUkt6pXNpa8FkfKkEmNiJkeRDEXTnnjVtwT9FmMhG6NH8qwHTelGrlYm9rgg==
+
+next-translate-plugin@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/next-translate-plugin/-/next-translate-plugin-2.0.2.tgz#0cc16a0549081f89f0a9b2a209b302b74d2422f9"
+  integrity sha512-0JzyvnzBmxeM62kIbxRbQboUQvGH1FM3q8wIPwAZQyf14I3+rVqjUfEIZzT8ioXx34RddNtYeR6K+zq/kfBiUg==
+  dependencies:
+    typescript "4.5.2"
+
+next-translate-scanner@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/next-translate-scanner/-/next-translate-scanner-0.2.1.tgz#b946667b32632adb270ae2ac9eca1fd02c942698"
+  integrity sha512-Q3d39S4b8jXDcwTYK0HfWiZaT3sXMO4ZhNg8ghyHb6YdRLf7JReyz8bITWQ0en5RSjbdgB4UCdeAo/REpcND1w==
+  dependencies:
+    chalk "^4.1.2"
+    commander "^9.0.0"
+    glob "^7.2.0"
+    rimraf "^3.0.2"
+
+next-translate@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/next-translate/-/next-translate-2.0.2.tgz#5f0f8a7ede342b3d85ce6fd0f17eb758f2d64ddd"
+  integrity sha512-ur1HNbfCyXord34NIXW4Lv+mCJlv3U2b23VFnbXl3dDR4nUWSq0KLi5IIOKWUpx/lIxBp9Iz3TtW/iWoUeva5w==
 
 next@13.1.6:
   version "13.1.6"
@@ -5893,6 +5915,11 @@ typedarray-to-buffer@^3.1.5:
   integrity sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==
   dependencies:
     is-typedarray "^1.0.0"
+
+typescript@4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.2.tgz#8ac1fba9f52256fdb06fb89e4122fa6a346c2998"
+  integrity sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw==
 
 typescript@4.9.5:
   version "4.9.5"
