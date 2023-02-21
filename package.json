@@ -7,17 +7,31 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "gen:theme-typings": "chakra-cli tokens ./src/styles/theme/index.ts",
+    "postinstall": "npm run gen:theme-typings"
   },
   "dependencies": {
-    "@next/font": "13.1.6",
+    "@chakra-ui/icons": "^2.0.17",
+    "@chakra-ui/next-js": "^2.0.1",
+    "@chakra-ui/react": "^2.5.1",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@fontsource/roboto": "^4.5.8",
+    "@next/font": "^13.1.6",
+    "eslint-plugin-import": "^2.27.5",
+    "framer-motion": "^9.0.7",
     "lodash-es": "^4.17.21",
     "next": "13.1.6",
+    "next-pwa": "^5.6.0",
+    "next-seo": "^5.15.0",
     "prettier": "^2.8.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1"
   },
   "devDependencies": {
+    "@chakra-ui/cli": "^2.3.0",
     "@types/node": "18.14.0",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
